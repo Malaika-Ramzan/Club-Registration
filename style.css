@@ -1,0 +1,948 @@
+
+/* ==============================    VARIABLES ================================= */
+
+:root {
+
+    --primary: #315c4c;
+    --secondary: #567d68;
+
+    --dark: #202b27;
+    --text: #3f4945;
+    --muted: #7b8580;
+
+    --light: #f7f3eb;
+    --cream: #fbf8f1;
+
+    --white: #ffffff;
+
+    --border: #ded6c8;
+
+    --accent: #b7795b;
+    --gold: #c6a15b;
+
+    --soft-green: #e8eee9;
+    --soft-terracotta: #f1e4dc;
+
+    --shadow:
+        0 15px 40px rgba(49, 92, 76, 0.13);
+
+}
+
+
+/* ==============================    RESET ================================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: var(--light);
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+button, input, select, textarea {
+
+    font: inherit;
+
+}
+
+
+/* ==============================    HEADER ================================= */
+
+.site-header {
+
+    width: 90%;
+
+    background: rgba(251, 248, 241, 0.97);
+
+    padding: 20px 4%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow:
+        0 4px 20px rgba(32, 43, 39, 0.08);
+
+    margin: auto;
+
+}
+
+
+.logo {
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    color: #172923;
+
+}
+
+
+.logo span {
+
+    color: var(--accent);
+
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+nav a {
+
+    color: var(--text);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+
+nav a:hover {
+
+    color: var(--accent);
+
+}
+
+
+/* ==============================    HERO ================================= */
+
+.hero {
+
+    min-height: 520px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 7%;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(
+            135deg,
+            #172923,
+            #315c4c,
+            #6d8a76
+        );
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.hero::before {
+
+    content: "";
+
+    width: 320px;
+
+    height: 320px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(198, 161, 91, 0.15);
+
+    position: absolute;
+
+    top: -120px;
+
+    right: -80px;
+
+}
+
+
+.hero::after {
+
+    content: "";
+
+    width: 250px;
+
+    height: 250px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(183, 121, 91, 0.13);
+
+    position: absolute;
+
+    bottom: -100px;
+
+    left: -70px;
+
+}
+
+
+.hero-content {
+
+    max-width: 800px;
+
+    position: relative;
+
+    z-index: 2;
+
+    animation:
+        fadeUp 1s ease;
+
+}
+
+
+.small-heading {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+    color: #e6c98c;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(42px, 6vw, 72px);
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #172923;
+
+}
+
+
+.hero p:not(.small-heading) {
+
+    max-width: 650px;
+
+    margin:
+        0 auto 35px;
+
+    font-size: 18px;
+
+    opacity: 0.9;
+
+}
+
+
+.hero-button {
+
+    display: inline-block;
+
+    padding: 14px 32px;
+
+    background: var(--accent);
+
+    color: var(--white);
+
+    font-weight: 700;
+
+    border-radius: 50px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.hero-button:hover {
+
+    background: var(--gold);
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, 0.22);
+
+}
+
+
+/* ==============================    REGISTRATION ================================= */
+
+.registration-section {
+
+    padding: 85px 7%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f7f3eb,
+            #fbf8f1
+        );
+
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin:
+        0 auto 45px;
+
+}
+
+
+.section-heading p {
+
+    color: var(--accent);
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 42px;
+
+    color: var(--dark);
+
+    margin: 10px 0;
+
+}
+
+
+.section-heading span {
+
+    color: var(--muted);
+
+}
+
+
+/* ==============================    FORM ================================= */
+
+.registration-form {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    background: var(--cream);
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+
+    border:
+        1px solid rgba(198, 161, 91, 0.18);
+
+}
+
+
+fieldset {
+
+    border: none;
+
+    padding: 25px 0;
+
+    margin-bottom: 25px;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+fieldset:last-of-type {
+
+    border-bottom: none;
+
+}
+
+
+legend {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    color: var(--dark);
+
+    margin-bottom: 20px;
+
+}
+
+
+.field-description {
+
+    color: var(--muted);
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ==============================    GRID ================================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.form-group label {
+
+    font-weight: 700;
+
+    color: var(--dark);
+
+}
+
+
+.form-group input, .form-group select, .form-group textarea {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 12px;
+
+    background: #fffdf8;
+
+    color: var(--text);
+
+    outline: none;
+
+    transition: 0.3s ease;
+
+}
+
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+
+    border-color: var(--accent);
+
+    box-shadow:
+        0 0 0 4px
+        rgba(183, 121, 91, 0.12);
+
+    background: var(--white);
+
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 130px;
+
+}
+
+
+.full-width {
+
+    grid-column: 1 / -1;
+
+}
+
+
+/* ==============================    CLUB CARDS ================================= */
+
+.club-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.club-card {
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    background: #fffdf8;
+
+    transition: 0.3s ease;
+
+}
+
+
+.club-card:hover {
+
+    border-color: var(--accent);
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(183, 121, 91, 0.14);
+
+}
+
+
+.club-card.selected {
+
+    border-color: var(--primary);
+
+    background: var(--soft-green);
+
+}
+
+
+.club-card input {
+
+    margin-right: 8px;
+
+    accent-color: var(--primary);
+
+}
+
+
+.club-card span {
+
+    font-weight: 700;
+
+    color: var(--dark);
+
+}
+
+
+/* ==============================    PROFILE PREVIEW ================================= */
+
+.profile-preview {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--soft-green),
+            var(--soft-terracotta)
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    border:
+        1px solid var(--border);
+
+}
+
+
+.profile-image {
+
+    width: 105px;
+
+    height: 105px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border:
+        4px solid var(--white);
+
+    box-shadow:
+        0 8px 25px
+        rgba(32, 43, 39, 0.15);
+
+    flex-shrink: 0;
+
+}
+
+
+.profile-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.profile-info p {
+
+    font-size: 12px;
+
+    color: var(--accent);
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.profile-info h3 {
+
+    font-size: 28px;
+
+    color: var(--dark);
+
+}
+
+
+.profile-info span {
+
+    color: var(--muted);
+
+}
+
+
+/* ==============================    BUTTONS ================================= */
+
+.form-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+
+.submit-button, .reset-button {
+
+    padding:
+        14px 28px;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+
+}
+
+
+.submit-button {
+
+    border: none;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+}
+
+
+.submit-button:hover {
+
+    background: var(--secondary);
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(49, 92, 76, 0.20);
+
+}
+
+
+.reset-button {
+
+    border:
+        1px solid var(--border);
+
+    background: var(--white);
+
+    color: var(--text);
+
+}
+
+
+.reset-button:hover {
+
+    background: var(--soft-terracotta);
+
+    border-color: var(--accent);
+
+}
+
+
+/* ==============================    FOOTER ================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: #172923;
+
+    color:
+        rgba(255, 255, 255, 0.85);
+
+    font-size: 14px;
+
+}
+
+
+/* ==============================    ANIMATION ================================= */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* ==============================    RESPONSIVE ================================= */
+
+@media (max-width: 768px) {
+
+    .site-header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding:
+            18px 5%;
+
+    }
+
+
+    nav {
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .hero {
+
+        padding:
+            70px 5%;
+
+    }
+
+
+    .registration-section {
+
+        padding:
+            60px 5%;
+
+    }
+
+
+    .registration-form {
+
+        padding: 25px;
+
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .club-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .profile-preview {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .form-actions {
+
+        flex-direction: column;
+
+    }
+
+
+    .submit-button,
+    .reset-button {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .club-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .registration-form {
+
+        padding: 20px;
+
+        border-radius: 18px;
+
+    }
+
+}

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT Club | Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="logo">
+            IT <span>CLUB</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#registration">Registration</a>
+            <a href="#clubs">Clubs</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-heading">
+                UNIVERSITY STUDENT SOCIETY
+            </p>
+
+            <h1>
+                Welcome to the
+                <span>IT Club</span>
+            </h1>
+
+            <p>
+                Learn, create, connect and grow with students
+                who share your passion for technology.
+            </p>
+
+            <a href="#registration" class="hero-button">
+                Join IT Club
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <section class="registration-section" id="registration">
+
+            <div class="section-heading">
+
+                <p>IT CLUB MEMBERSHIP</p>
+
+                <h2>Student Club Registration</h2>
+
+                <span>
+                    Complete your registration details below.
+                </span>
+
+            </div>
+
+
+            <!-- ================= FORM ================= -->
+
+            <form
+                class="registration-form"
+                enctype="multipart/form-data"
+            >
+
+
+                <!-- PERSONAL INFORMATION -->
+
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <div class="form-grid">
+
+
+                        <!-- Student Name -->
+
+                        <div class="form-group">
+
+                            <label for="student-name">
+                                Student Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="student-name"
+                                name="student-name"
+                                value="Sana"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Registration Number -->
+
+                        <div class="form-group">
+
+                            <label for="registration-number">
+                                Registration Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="registration-number"
+                                name="registration-number"
+                                value="8947367"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Department -->
+
+                        <div class="form-group">
+
+                            <label for="department">
+                                Department
+                            </label>
+
+                            <input
+                                type="text"
+                                id="department"
+                                name="department"
+                                value="IT"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Semester -->
+
+                        <div class="form-group">
+
+                            <label for="semester">
+                                Semester
+                            </label>
+
+                            <select
+                                id="semester"
+                                name="semester"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Semester
+                                </option>
+
+                                <option value="1st">
+                                    1st Semester
+                                </option>
+
+                                <option value="2nd">
+                                    2nd Semester
+                                </option>
+
+                                <option value="3rd" selected>
+                                    3rd Semester
+                                </option>
+
+                                <option value="4th">
+                                    4th Semester
+                                </option>
+
+                                <option value="5th">
+                                    5th Semester
+                                </option>
+
+                                <option value="6th">
+                                    6th Semester
+                                </option>
+
+                                <option value="7th">
+                                    7th Semester
+                                </option>
+
+                                <option value="8th">
+                                    8th Semester
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value="sanaali4567@gmail.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Phone -->
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                value="03858599086"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ================= CLUB SELECTION ================= -->
+
+                <fieldset id="clubs">
+
+                    <legend>Club Selection</legend>
+
+                    <p class="field-description">
+                        Select your preferred university club.
+                    </p>
+
+                    <div class="club-grid">
+
+
+                        <label class="club-card selected">
+
+                            <input
+                                type="radio"
+                                name="club"
+                                value="IT"
+                                checked
+                            >
+
+                            <span>
+                                💻 IT
+                            </span>
+
+                        </label>
+
+
+                        <label class="club-card">
+
+                            <input
+                                type="radio"
+                                name="club"
+                                value="Sports"
+                            >
+
+                            <span>
+                                ⚽ Sports
+                            </span>
+
+                        </label>
+
+
+                        <label class="club-card">
+
+                            <input
+                                type="radio"
+                                name="club"
+                                value="Photography"
+                            >
+
+                            <span>
+                                📷 Photography
+                            </span>
+
+                        </label>
+
+
+                        <label class="club-card">
+
+                            <input
+                                type="radio"
+                                name="club"
+                                value="Debating"
+                            >
+
+                            <span>
+                                🎤 Debating
+                            </span>
+
+                        </label>
+
+
+                        <label class="club-card">
+
+                            <input
+                                type="radio"
+                                name="club"
+                                value="Literary"
+                            >
+
+                            <span>
+                                📚 Literary
+                            </span>
+
+                        </label>
+
+
+                        <label class="club-card">
+
+                            <input
+                                type="radio"
+                                name="club"
+                                value="Media"
+                            >
+
+                            <span>
+                                🎬 Media
+                            </span>
+
+                        </label>
+
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ================= SKILLS ================= -->
+
+                <fieldset>
+
+                    <legend>Skills & Experience</legend>
+
+
+                    <!-- Skills -->
+
+                    <div class="form-group full-width">
+
+                        <label for="skills">
+                            Skills
+                        </label>
+
+                        <input
+                            type="text"
+                            id="skills"
+                            name="skills"
+                            value="Designing, Speaking, Reading"
+                        >
+
+                    </div>
+
+
+                    <!-- Previous Activities -->
+
+                    <div class="form-group full-width">
+
+                        <label for="activities">
+                            Previous Activities
+                        </label>
+
+                        <textarea
+                            id="activities"
+                            name="activities"
+                            rows="4"
+                        >Cricket</textarea>
+
+                    </div>
+
+
+                    <!-- Why Join -->
+
+                    <div class="form-group full-width">
+
+                        <label for="reason">
+                            Why do you want to join?
+                        </label>
+
+                        <textarea
+                            id="reason"
+                            name="reason"
+                            rows="5"
+                        >  Because I am intrested.</textarea>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ================= ADDITIONAL INFORMATION ================= -->
+
+                <fieldset>
+
+                    <legend>Additional Information</legend>
+
+                    <div class="form-grid">
+
+
+                        <!-- Preferred Role -->
+
+                        <div class="form-group">
+
+                            <label for="role">
+                                Preferred Role
+                            </label>
+
+                            <select
+                                id="role"
+                                name="role"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Preferred Role
+                                </option>
+
+                                <option value="member">
+                                    General Member
+                                </option>
+
+                                <option value="volunteer">
+                                    Volunteer
+                                </option>
+
+                                <option value="leader" selected>
+                                    Leader
+                                </option>
+
+                                <option value="coordinator">
+                                    Event Coordinator
+                                </option>
+
+                                <option value="designer">
+                                    Designer
+                                </option>
+
+                                <option value="content">
+                                    Content Creator
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Profile Photo -->
+
+                        <div class="form-group">
+
+                            <label for="profile-photo">
+                                Profile Photo
+                            </label>
+
+                            <input
+                                type="file"
+                                id="profile-photo"
+                                name="profile-photo"
+                                accept="image/png, image/jpeg"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ================= PROFILE PREVIEW ================= -->
+
+                <div class="profile-preview">
+
+                    <div class="profile-image">
+
+                        <img
+                            src="https://csitgeu.in/wp/Sample-2.jpg"
+                            alt="Female university student in college uniform"
+                        >
+
+                    </div>
+
+                    <div class="profile-info">
+
+                        <p>REGISTERED STUDENT</p>
+
+                        <h3>Sana</h3>
+
+                        <span>
+                            IT Club • 3rd Semester
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= BUTTONS ================= -->
+
+                <div class="form-actions">
+
+                    <button
+                        type="reset"
+                        class="reset-button"
+                    >
+                        Clear Form
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+                        Register Now →
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 IT Club | University Student Society
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
